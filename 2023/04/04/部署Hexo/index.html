@@ -183,6 +183,14 @@
   	<time datetime="2023-04-04T01:31:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-04</time>
 </a>
         
+
+        <!-- 添加为了阅读量功能 -->
+        
+          <div style="color: #999">
+          <span id="/2023/04/04/%E9%83%A8%E7%BD%B2Hexo/" class="leancloud_visitors" data-flag-title="hexo配置">当前页访问次数 <i class="leancloud-visitors-count"></i></span>
+          </div>
+      
+      <!-- 添加结束 -->
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -417,7 +425,9 @@
       highlight: 'true' === 'true',
       recordIp: 'false' === 'true',
       enableQQ: 'false' === 'true',
-      serverURLs: ''
+      serverURLs: '',
+      visitor: ("localhost" != document.domain)?true:false // 阅读量统计
+      
     });
     document.getElementById('veditor').maxLength='500';
   </script>
@@ -529,6 +539,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">工具类</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">React</a>
               </li>
              
@@ -538,14 +556,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Hooks</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">MarkDown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">工具类</a>
               </li>
              
               <li class="article-tag-list-item">

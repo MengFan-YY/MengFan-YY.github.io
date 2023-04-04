@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Tag: 前端框架 | mengfan</title>
+  <title>评论模块配置 | mengfan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mengfan">
-<meta property="og:url" content="http://example.com/tags/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/index.html">
+  <meta name="description" content="hexo yilia 的leancloud评论系统配置参考成功的博客 如果想对某篇文章关闭评论，在文章开头Front-matter菜单中添加comments: false属性（默认都开启评论）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="评论模块配置">
+<meta property="og:url" content="http://example.com/2023/04/04/%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="mengfan">
-<meta property="og:description" content="个人技术博客">
+<meta property="og:description" content="hexo yilia 的leancloud评论系统配置参考成功的博客 如果想对某篇文章关闭评论，在文章开头Front-matter菜单中添加comments: false属性（默认都开启评论）">
 <meta property="og:locale" content="zh_CH">
+<meta property="article:published_time" content="2023-04-04T09:08:29.000Z">
+<meta property="article:modified_time" content="2023-04-04T10:07:42.059Z">
 <meta property="article:author" content="ChenMF">
 <meta property="article:tag" content="程序员，成长">
 <meta name="twitter:card" content="summary">
@@ -165,80 +167,233 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-评论模块配置" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2023/04/04/React/" class="archive-article-date">
-  	<time datetime="2023-04-04T06:52:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/04/04/React/">ReactHooks初探</a>
+    <h1 class="article-title" itemprop="name">
+      评论模块配置
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">React</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端框架</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Hooks</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        <a href="/2023/04/04/%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2023-04-04T09:08:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-04</time>
+</a>
+        
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        <!-- 添加为了阅读量功能 -->
+        
+          <div style="color: #999">
+          <span id="/2023/04/04/%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/" class="leancloud_visitors" data-flag-title="评论模块配置">当前页访问次数 <i class="leancloud-visitors-count"></i></span>
+          </div>
+      
+      <!-- 添加结束 -->
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="hexo-yilia-的leancloud评论系统配置"><a href="#hexo-yilia-的leancloud评论系统配置" class="headerlink" title="hexo yilia 的leancloud评论系统配置"></a>hexo yilia 的leancloud评论系统配置</h2><p><a target="_blank" rel="noopener" href="https://akbcd.github.io/2020/04/22/yilia%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA/#%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97">参考成功的博客</a></p>
+<p>如果想对某篇文章关闭评论，在文章开头Front-matter菜单中添加comments: false属性（默认都开启评论）</p>
 
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2023/04/04/%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2023/04/04/MarkDown%E6%A0%87%E5%87%86%E8%AF%AD%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MarkDown标准语法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  <!-- 新增 -->
+  
+    <!-- <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var notify = '' == true ? true : false;
+  var verify = '' == true ? true : false;
+  new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "",
+    app_key: "",
+    placeholder: "Just Go Go.",
+    avatar: "mp",
+  });
+</script> -->
+<style>
+    /* 适配yilia主题 */
+    #valine {
+      padding: 0 30px;
+    }
+    #valine .vwrap{
+      border: 1px solid #c8c8c8;
+    }
+    #valine .vwrap .vheader input,#valine .vcard{
+      border-bottom: 1px dashed #c8c8c8;
+    }
+    #valine .vwrap button,#valine .vmore{
+      background: #c8c8c8;
+    }
+    @media screen and (max-width: 800px) {
+      #valine{
+        padding: 0 10px;
+      }
+    }
+  </style>
+  <div id="valine"></div>
+  <script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+  <script>
+    new Valine({
+      el: '#valine',
+      appId: 'RUmIBlMmGv4zEWt51ztDU1Wd-gzGzoHsz',
+      appKey: 'IFSbi6MlVIudT5ew7kMZHase',
+      placeholder: 'Just Go Go.',
+      avatar: 'mp',
+      pageSize: '10',
+      lang: 'en',
+      highlight: 'true' === 'true',
+      recordIp: 'false' === 'true',
+      enableQQ: 'false' === 'true',
+      serverURLs: '',
+      visitor: ("localhost" != document.domain)?true:false // 阅读量统计
+      
+    });
+    document.getElementById('veditor').maxLength='500';
+  </script>
     
 
+  <!-- lll -->
+  
+  
+  
+
+  
+
+  
+
+  
+
+
+<!-- 
+  
+  -->
 
           </div>
         </div>
@@ -260,9 +415,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
