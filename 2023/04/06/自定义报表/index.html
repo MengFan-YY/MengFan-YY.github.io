@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>mengfan</title>
+  <title>自定义报表文档阅读笔记 | mengfan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&#x3D;&#x3D;&#x3D;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mengfan">
+<meta property="og:title" content="自定义报表文档阅读笔记">
 <meta property="og:url" content="http://example.com/2023/04/06/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/index.html">
 <meta property="og:site_name" content="mengfan">
 <meta property="og:description" content="&#x3D;&#x3D;&#x3D;">
 <meta property="og:locale" content="zh_CH">
 <meta property="article:published_time" content="2023-04-06T07:16:15.000Z">
-<meta property="article:modified_time" content="2023-04-06T09:54:24.578Z">
+<meta property="article:modified_time" content="2023-04-06T10:10:30.722Z">
 <meta property="article:author" content="ChenMF">
 <meta property="article:tag" content="笔记">
 <meta property="article:tag" content="实习">
@@ -172,6 +172,29 @@
             <article id="post-自定义报表" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      自定义报表文档阅读笔记
+    </h1>
+  
+
+        
+        <a href="/2023/04/06/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2023-04-06T07:16:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-04-06</time>
+</a>
+        
+
+        <!-- 添加为了阅读量功能 -->
+        
+          <div style="color: #999">
+          <span id="/2023/04/06/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%A5%E8%A1%A8/" class="leancloud_visitors" data-flag-title="自定义报表文档阅读笔记">当前页访问量 <i class="leancloud-visitors-count"></i></span>
+          </div>
+      
+      <!-- 添加结束 -->
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>&#x3D;&#x3D;&#x3D;</p>
@@ -182,10 +205,10 @@
 <li>SQL数据源（子查询&amp;&amp;联合）</li>
 </ol>
 <h2 id="x3D-x3D-x3D-（01）自助分析普通数据源配置说明-平台-步骤"><a href="#x3D-x3D-x3D-（01）自助分析普通数据源配置说明-平台-步骤" class="headerlink" title="&#x3D;&#x3D;&#x3D;### （01）自助分析普通数据源配置说明+ 平台+ 步骤"></a>&#x3D;&#x3D;&#x3D;<br>### （01）自助分析普通数据源配置说明<br>+ 平台<br>+ 步骤</h2><h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
-<li>数据源配置<br>a. 配置几个字段             b.部署</li>
-<li>物理表配置<br>a. 表名、类型、数据源        b.部署</li>
-<li>视图配置<br>a.表别名、物理表名、过滤配置  b.部署</li>
-<li>数据表模型配置<br>a.很多字段                 b.部署</li>
+<li>数据源配置<br>a. 配置几个字段&amp;nbsp;&amp;nbsp;b.部署</li>
+<li>物理表配置<br>a. 表名、类型、数据源 &amp;nbsp;&amp;nbsp;       b.部署</li>
+<li>视图配置<br>a.表别名、物理表名、过滤配置&amp;nbsp;&amp;nbsp;  b.部署</li>
+<li>数据表模型配置<br>a.很多字段 &amp;nbsp;&amp;nbsp;                b.部署</li>
 <li>模型字段</li>
 <li>模型关联关系配置</li>
 </ol>
@@ -198,6 +221,35 @@
 </ul>
 <p>&#x3D;&#x3D;&#x3D; </p>
 <h3 id="（02）SQL数据源配置说明"><a href="#（02）SQL数据源配置说明" class="headerlink" title="（02）SQL数据源配置说明"></a>（02）SQL数据源配置说明</h3><p>+ </p>
+<h3 id="02A-动态SQL配置"><a href="#02A-动态SQL配置" class="headerlink" title="(02A)动态SQL配置"></a>(02A)动态SQL配置</h3><ul>
+<li>注意</li>
+<li>筛选器配置</li>
+<li>参数</li>
+</ul>
+<h4 id="筛选器配置"><a href="#筛选器配置" class="headerlink" title="筛选器配置"></a>筛选器配置</h4><ol>
+<li>筛选器就是where的筛选条件</li>
+<li>筛选字段与模型字段一致</li>
+<li>动态查询条件都要用<if test></if>包裹</li>
+<li>必须用<where>对筛选内容包裹。</where></li>
+<li>判等用in来表示不接受&#x3D;</li>
+<li>非动态查询条件，写在 SQL 中且不需要进行字段配置</li>
+<li><strong>时间字段的开始值和结束值参数名用后缀_startDate和_endDate</strong></li>
+<li>区间筛选器配置：在SQL中，将配置为区间筛选器的字段按照条件，分别写2条查询语句，并增加后缀</li>
+</ol>
+<hr>
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><ol>
+<li>测试内容为筛选器字段</li>
+<li><h1 id="所有的查询均采用“-”列表形式"><a href="#所有的查询均采用“-”列表形式" class="headerlink" title="所有的查询均采用“[]”列表形式"></a>所有的查询均采用“[]”列表形式</h1></li>
+</ol>
+<h3 id="02B-SQL-数据源配置步骤"><a href="#02B-SQL-数据源配置步骤" class="headerlink" title="(02B)SQL 数据源配置步骤"></a>(02B)SQL 数据源配置步骤</h3><ul>
+<li>书写SQL接口</li>
+<li>基础配置</li>
+</ul>
+<h4 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h4><ol>
+<li>物化视图</li>
+<li>数据表模型</li>
+<li>模型字段</li>
+</ol>
 
       
 
@@ -320,6 +372,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2023/04/06/%E6%89%93%E5%B7%A5%E6%97%A5%E8%AE%B04-6%E5%91%A8%E5%9B%9B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          打工日记4-6
+        
+      </div>
+    </a>
   
   
     <a href="/2023/04/04/%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97%E9%85%8D%E7%BD%AE/" id="article-nav-older" class="article-nav-link-wrap">
@@ -524,6 +585,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">工具类</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日记</a>
               </li>
              
               <li class="article-tag-list-item">
